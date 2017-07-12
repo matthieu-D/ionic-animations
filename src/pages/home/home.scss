@@ -1,3 +1,31 @@
 page-home {
 
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes fivePhasesFadeIn {
+     0% {opacity: 1}
+     25% {opacity: 0.25}
+     50% {opacity: 0.5}
+     75% {opacity: 0.75}
+     100% {opacity: 1}
+  }
+
+  .fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 4s;
+  }
+
+  .fivePhasesFadeIn {
+    animation-name: fivePhasesFadeIn;
+    animation-duration: 4s;
+  }
 }
